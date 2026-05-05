@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, Entry, Button, Label #Changed imports - only things that we use at exatly moment
 
 
 def button_pressed(text):
@@ -13,5 +13,5 @@ lab = Label(window, width=20, bg='black', fg='white')
 ent.pack()
 but.pack()
 lab.pack()
-but.bind('<Button-1>', button_pressed)
+but.bind('<Button-1>', button_pressed) #Find out how this method works
 window.mainloop()
